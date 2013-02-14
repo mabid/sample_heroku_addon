@@ -4,10 +4,12 @@ class TodoAPITest
 
   include HTTParty
 
+  #replace this with your TODOSADDON_URL
   base_uri 'http://localhost:3000/accounts/11/todos'
   format :json
 
   def self.access_token
+    #replace this with your TODOSADDON_ACCESS_TOKEN
     "f1525ef2b18248fcf9f5bbd9f46eb2e6"
   end
 
