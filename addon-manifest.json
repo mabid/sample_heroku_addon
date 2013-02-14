@@ -1,0 +1,16 @@
+{
+  "id": "todosaddon",
+  "api": {
+    "config_vars": [ "TODOSADDON_URL", "TODOSADDON_ACCESS_TOKEN" ],
+    "password": "aW8s0wb0pvkHcfbe",
+    "sso_salt": "pkYwAWyk5qoBHxPx",
+    "production": {
+      "base_url": "https://yourapp.com/heroku/resources",
+      "sso_url": "https://yourapp.com/sso/login"
+    },
+    "test": {
+      "base_url": "http://localhost:3000/heroku/resources",
+      "sso_url": "http://localhost:3000/heroku/sso"
+    }
+  }
+}
