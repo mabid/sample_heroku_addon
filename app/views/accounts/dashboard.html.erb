@@ -1,0 +1,8 @@
+<h1> Welcome <%= current_account.name %> </h1>
+<h3> Your Account Token is <%= current_account.token %> </h1>
+
+Here is your stuff
+
+<%- current_account.todos.each do |todo| %>
+<p> <%= "#{todo.id} - #{todo.text} "%> </p>
+<%- end %>

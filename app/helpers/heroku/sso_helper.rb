@@ -1,0 +1,2 @@
+module Heroku::SsoHelper
+end
