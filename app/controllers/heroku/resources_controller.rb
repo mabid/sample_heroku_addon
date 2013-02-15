@@ -29,7 +29,8 @@ class Heroku::ResourcesController < ApplicationController
     response = { 
       :id => @account.id,
       :config => {
-        'TODOSADDON_URL' => account_todos_url(@account)
+        'TODOSADDON_URL' => account_todos_url(@account),
+        'TODOSADDON_ACCESS_TOKEN' => @account.token
       },
       :message => 'Successfully Updated Plan'
     }
